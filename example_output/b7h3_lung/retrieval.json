@@ -1,0 +1,50 @@
+{
+  "question": "Assess B7-H3 potential as a therapeutic target in lung cancer",
+  "target": "B7-H3",
+  "target_aliases": [
+    "B7-H3",
+    "CD276"
+  ],
+  "condition": "lung cancer",
+  "retrieved_at": "2026-08-20T03:39:13.839416+00:00",
+  "source": "ClinicalTrials.gov API v2",
+  "llm_provider": null,
+  "llm_model": null,
+  "max_studies": 20,
+  "summary": {
+    "retrieved": 20,
+    "direct_intervention": 13,
+    "excluded_or_uncertain": 7,
+    "active": 10,
+    "discontinued": 3,
+    "results_posted": 1,
+    "monotherapy_signal": 0,
+    "phases": {
+      "PHASE1": 8,
+      "PHASE2": 6,
+      "PHASE3": 2
+    },
+    "statuses": {
+      "RECRUITING": 7,
+      "TERMINATED": 2,
+      "WITHDRAWN": 1,
+      "ACTIVE_NOT_RECRUITING": 1,
+      "NOT_YET_RECRUITING": 2
+    },
+    "sponsors": {
+      "Daiichi Sankyo": 3,
+      "Second Affiliated Hospital of Guangzhou Medical University": 2,
+      "MacroGenics": 2,
+      "Hansoh BioMedical R&D Company": 1,
+      "GlaxoSmithKline": 1,
+      "Radiopharm Theranostics, Ltd": 1,
+      "SUNHO（China）BioPharmaceutical CO., Ltd.": 1,
+      "BioNTech SE": 1,
+      "National Cancer Institute (NCI)": 1
+    },
+    "intervention_types": {
+      "BIOLOGICAL": 6,
+      "DRUG": 9
+    }
+  }
+}

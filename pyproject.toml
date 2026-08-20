@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ct-target-agent"
+version = "0.2.0"
+description = "Auditable ClinicalTrials.gov target-assessment agent"
+requires-python = ">=3.11"
+dependencies = ["openai>=1.0"]
+
+[project.scripts]
+ct-target-agent = "ct_target_agent.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ct_target_agent*"]

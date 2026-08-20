@@ -1,0 +1,740 @@
+[
+  {
+    "nct_id": "NCT03198052",
+    "title": "GPC3/Mesothelin/Claudin18.2/GUCY2C/B7-H3/PSCA/PSMA/MUC1/TGFβ/HER2/Lewis-Y/AXL/EGFR-CAR-T Cells Against Cancers",
+    "status": "RECRUITING",
+    "phases": [
+      "PHASE1"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 30,
+    "sponsor": "Second Affiliated Hospital of Guangzhou Medical University",
+    "interventions": [
+      "CAR-T cells targeting GPC3, Mesothelin, Claudin18.2, GUCY2C, B7-H3, PSCA, PSMA, MUC1, TGFβ, HER2, Lewis-Y, AXL, or EGFR"
+    ],
+    "intervention_types": [
+      "BIOLOGICAL"
+    ],
+    "conditions": [
+      "Lung Cancer",
+      "Cancer",
+      "Immunotherapy",
+      "CAR-T Cell"
+    ],
+    "has_results": false,
+    "start_date": "2017-07-01",
+    "completion_date": "2036-08-01",
+    "last_update": "2024-06-25",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "The third generation of CAR-T cells that target GPC3, Mesothelin, Claudin18.2, GUCY2C, B7-H3, PSCA, PSMA, MUC1, TGFβ, HER2, Lewis-Y, AXL, or EGFR have been constructed respectively and their anti-cancer function has been verified by multiple in vitro and in vivo studies.Clinical studies will be performed to test the anti-cancer function of the these individual or combination of the CAR-T cells for immunotherapy of human cancer patients with GPC3, Mesothelin, Claudin18.2, GUCY2C, B7-H3, PSCA, PSMA, MUC1, TGFβ, HER2, Lewis-Y, AXL, or EGFR expressions. In this phase I study, the safety, tolerance, and preliminary efficacy of the GPC3/Mesothelin/Claudin18.2/GUCY2C/B7-H3/PSCA/PSMA/MUC1/TGFβ/HER2/Lewis-Y/AXL/EGFR\n\n-CAR-T cell immunotherapy on human cancers will firstly be tested.",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT03198052"
+  },
+  {
+    "nct_id": "NCT06953089",
+    "title": "DB-1311 in Combination With BNT327 or DB-1305 in Advanced/Metastatic Solid Tumors",
+    "status": "RECRUITING",
+    "phases": [
+      "PHASE2"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 450,
+    "sponsor": "DualityBio Inc.",
+    "interventions": [
+      "DB-1311/BNT324",
+      "BNT327",
+      "DB-1305/BNT325"
+    ],
+    "intervention_types": [
+      "DRUG"
+    ],
+    "conditions": [
+      "Solid Tumors"
+    ],
+    "has_results": false,
+    "start_date": "2025-07-18",
+    "completion_date": "2030-06-30",
+    "last_update": "2026-05-22",
+    "target_role": "unconfirmed",
+    "matched_aliases": [],
+    "monotherapy_signal": false,
+    "summary": "A Phase II, Multicenter, Open-Label Trial of DB-1311 in combination with BNT327 or DB-1305 in Participants with Advanced/Metastatic Solid Tumors",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT06953089"
+  },
+  {
+    "nct_id": "NCT03729596",
+    "title": "MGC018 With or Without MGA012 in Advanced Solid Tumors",
+    "status": "TERMINATED",
+    "phases": [
+      "PHASE1",
+      "PHASE2"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 143,
+    "sponsor": "MacroGenics",
+    "interventions": [
+      "vobramitamab duocarmazine"
+    ],
+    "intervention_types": [
+      "BIOLOGICAL"
+    ],
+    "conditions": [
+      "Squamous Cell Carcinoma of Head and Neck",
+      "Triple Negative Breast Cancer",
+      "Melanoma",
+      "Advanced Solid Tumor, Adult",
+      "Metastatic Castrate Resistant Prostate Cancer",
+      "Non Small Cell Lung Cancer"
+    ],
+    "has_results": true,
+    "start_date": "2018-11-21",
+    "completion_date": "2023-03-18",
+    "last_update": "2025-07-31",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "The purpose of this study is to evaluate the safety and tolerability, pharmacokinetics (PK) pharmacodynamics and preliminary antitumor activity of vobramitamab duocarmazine (MGC018) in patients with advanced solid tumors. Patients with solid tumors will be enrolled in the Dose Escalation Phase; Cohort Expansion will include metastatic castrate-resistant prostate cancer (mCRPC), non-small cell lung cancer (NSCLC), triple-negative breast cancer (TNBC), squamous cell carcinoma of the head and neck (SCCHN), and melanoma. Patients who do not experience unacceptable toxicity or meet criteria for permanent discontinuation may undergo additional cycles for up to two years. Patients in Cohort Expansion will be followed for survival every 3 months for 2 years following last dose.",
+    "why_stopped": "Business decision",
+    "url": "https://clinicaltrials.gov/study/NCT03729596"
+  },
+  {
+    "nct_id": "NCT06052423",
+    "title": "ARTEMIS-007: HS-20093 in Patients With Extensive Stage Small Cell Lung Cancer",
+    "status": "WITHDRAWN",
+    "phases": [
+      "PHASE2"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 0,
+    "sponsor": "Hansoh BioMedical R&D Company",
+    "interventions": [
+      "HS-20093"
+    ],
+    "intervention_types": [
+      "DRUG"
+    ],
+    "conditions": [
+      "Extensive Stage Small Cell Lung Cancer (ES-SCLC)"
+    ],
+    "has_results": false,
+    "start_date": "2024-11-30",
+    "completion_date": "2027-06-30",
+    "last_update": "2024-03-04",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "This is a phase 2,open-label, multi-center study to evaluate the efficacy, safety, pharmacokinetics (PK) and immunogenicity of HS-20093 as a monotherapy in patients with small cell lung cancer(SCLC).",
+    "why_stopped": "Research and development strategy adjustment.",
+    "url": "https://clinicaltrials.gov/study/NCT06052423"
+  },
+  {
+    "nct_id": "NCT06203210",
+    "title": "A Study of Ifinatamab Deruxtecan Versus Treatment of Physician's Choice in Subjects With Relapsed Small Cell Lung Cancer",
+    "status": "RECRUITING",
+    "phases": [
+      "PHASE3"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 540,
+    "sponsor": "Daiichi Sankyo",
+    "interventions": [
+      "Ifinatamab deruxtecan",
+      "Topotecan",
+      "Amrubicin",
+      "Lurbinectedin"
+    ],
+    "intervention_types": [
+      "DRUG"
+    ],
+    "conditions": [
+      "Small Cell Lung Cancer"
+    ],
+    "has_results": false,
+    "start_date": "2024-05-21",
+    "completion_date": "2029-12-01",
+    "last_update": "2026-08-06",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "This study is designed to compare the efficacy and safety of I-DXd with treatment of physician's choice in participants with relapsed small cell lung cancer (SCLC).",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT06203210"
+  },
+  {
+    "nct_id": "NCT07181473",
+    "title": "A Study to Evaluate the Safety, Pharmacokinetics and Efficacy of TJ101 in Patients With Advanced/Metastatic Solid Tumors",
+    "status": "RECRUITING",
+    "phases": [
+      "PHASE1"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 200,
+    "sponsor": "Phrontline Biopharma",
+    "interventions": [
+      "TJ101"
+    ],
+    "intervention_types": [
+      "DRUG"
+    ],
+    "conditions": [
+      "Lung Cancer (NSCLC)",
+      "Prostate Cancer",
+      "Esophageal Cancer",
+      "Solid Tumor Malignancies"
+    ],
+    "has_results": false,
+    "start_date": "2025-08-25",
+    "completion_date": "2027-09-15",
+    "last_update": "2026-01-12",
+    "target_role": "background_or_biomarker",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "The goal of this clinical trial is to evaluate whether TJ101, an investigational antibody-drug conjugate (ADC), can safely and effectively treat patients with advanced solid tumors.\n\nThe main objectives of this study are :\n\n* To Determine the maximum tolerated dose (MTD) and recommended dose for expansion (RDE) of TJ101\n* to show preliminary antitumor activity in patients with advanced solid tumors\n\nParticipants will:\n\n* Receive intravenous (IV) infusions of TJ101 at escalating dose levels (during dose escalation) or at the selected expansion dose.\n* Undergo regular tumor imaging to assess response.\n* Provide blood samples for pharmacokinetics (PK) and biomarker analysis.\n* Be monitored for side effects and overall tolerability.\n\nThis study is being conducted in adult patients with advanced or metastatic solid tumors who have exhausted standard treatment options",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT07181473"
+  },
+  {
+    "nct_id": "NCT07503808",
+    "title": "A Study of IDE034 in Adult Participants With Locally Advanced/Metastatic Solid Tumors Types",
+    "status": "RECRUITING",
+    "phases": [
+      "PHASE1"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 150,
+    "sponsor": "IDEAYA Biosciences",
+    "interventions": [
+      "IDE034"
+    ],
+    "intervention_types": [
+      "DRUG"
+    ],
+    "conditions": [
+      "Esophageal Squamous Cell Carcinoma",
+      "High Grade Serous Ovarian Cancer",
+      "Head and Neck Squamous Cell Carcinoma",
+      "Colorectal Cancer",
+      "Castration-resistant Prostate Cancer",
+      "Non Small Cell Lung Cancer",
+      "Endometrium Cancer",
+      "Triple Negative Breast Cancer"
+    ],
+    "has_results": false,
+    "start_date": "2026-02-24",
+    "completion_date": "2027-07-30",
+    "last_update": "2026-06-18",
+    "target_role": "background_or_biomarker",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "This is a Phase 1a/1b, open-label, multicenter dose escalation and dose expansion clinical study to evaluate the safety, PK, immunogenicity and preliminary efficacy of IDE034 in participants with locally advanced/metastatic solid tumor types that express B7-H3 and PTK7.",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT07503808"
+  },
+  {
+    "nct_id": "NCT02381314",
+    "title": "Safety Study of Enoblituzumab (MGA271) in Combination With Ipilimumab in Refractory Cancer",
+    "status": "COMPLETED",
+    "phases": [
+      "PHASE1"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 24,
+    "sponsor": "MacroGenics",
+    "interventions": [
+      "enoblituzumab plus ipilimumab"
+    ],
+    "intervention_types": [
+      "BIOLOGICAL"
+    ],
+    "conditions": [
+      "Melanoma",
+      "Non Small Cell Lung Cancer"
+    ],
+    "has_results": false,
+    "start_date": "2015-03-26",
+    "completion_date": "2018-09-26",
+    "last_update": "2022-02-08",
+    "target_role": "background_or_biomarker",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "The purpose of this study is to evaluate the safety of enoblituzumab (MGA271) in combination with Yervoy (ipilimumab) when given to patients with B7-H3-expressing melanoma, squamous cell carcinoma of the head and neck (SCCHN), non small cell lung cancer (NSCLC) and other B7-H3 expressing cancers. The study will also evaluate what is the best dose of enoblituzumab to use when given with ipilimumab. Assessments will also be done to see how the drug acts in the body (pharmacokinetics (PK), pharmacodynamics) and to evaluate potential anti-tumor activity of enoblituzumab in combination with ipilimumab.",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT02381314"
+  },
+  {
+    "nct_id": "NCT02628535",
+    "title": "Safety Study of MGD009 in B7-H3-expressing Tumors",
+    "status": "TERMINATED",
+    "phases": [
+      "PHASE1"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 67,
+    "sponsor": "MacroGenics",
+    "interventions": [
+      "MGD009"
+    ],
+    "intervention_types": [
+      "BIOLOGICAL"
+    ],
+    "conditions": [
+      "Mesothelioma",
+      "Bladder Cancer",
+      "Melanoma",
+      "Squamous Cell Carcinoma of the Head and Neck",
+      "Non Small Cell Lung Cancer",
+      "Clear Cell Renal Cell Carcinoma",
+      "Ovarian Cancer",
+      "Thyroid Cancer",
+      "Breast Cancer",
+      "Pancreatic Cancer",
+      "Prostate Cancer",
+      "Colon Cancer",
+      "Soft Tissue Sarcoma"
+    ],
+    "has_results": false,
+    "start_date": "2015-09",
+    "completion_date": "2019-11-25",
+    "last_update": "2022-02-08",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "The purpose of this study is to evaluate the safety of MGD009 when given to patients with B7-H3-expressing tumors. The study will also evaluate what is the highest dose of MGD009 that can be given safely. Assessments will be done to see how the drug acts in the body (pharmacokinetics (PK), pharmacodynamics (PD) and to evaluate potential anti-tumor activity of MGD009.",
+    "why_stopped": "Business decision (not for safety reasons)",
+    "url": "https://clinicaltrials.gov/study/NCT02628535"
+  },
+  {
+    "nct_id": "NCT05190185",
+    "title": "A Clinical Trial of TAA06 Injection in Advanced Solid Tumors",
+    "status": "UNKNOWN",
+    "phases": [
+      "PHASE1"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 18,
+    "sponsor": "PersonGen BioTherapeutics (Suzhou) Co., Ltd.",
+    "interventions": [
+      "TAA06 injection"
+    ],
+    "intervention_types": [
+      "BIOLOGICAL"
+    ],
+    "conditions": [
+      "Malignant Melanoma, Lung Cancer, or Colorectal Cancer"
+    ],
+    "has_results": false,
+    "start_date": "2021-06-01",
+    "completion_date": "2023-12-01",
+    "last_update": "2022-01-13",
+    "target_role": "background_or_biomarker",
+    "matched_aliases": [
+      "B7-H3",
+      "CD276"
+    ],
+    "monotherapy_signal": false,
+    "summary": "B7-H3 (also known as CD276) is widely expressed on the surface of a variety of malignancies solid tumors, while it rarely or even doesn't express on normal tissues. Therefore, B7-H3 is an ideal target for chimeric antigen receptor (CAR) T cells therapy. TAA06 injection is a CAR T injection targeting B7-H3. This is a phase I clinical study with the primary objective of evaluating the safety and tolerability of TAA06 injection in subjects with TAA06-positive advanced solid tumors. The secondary objectives are as follows: to evaluate the distribution, proliferation and persistence of B7-H3-targeted CAR T cells after injection of TAA06 in subjects; to preliminarily evaluate the efficacy of TAA06 injection in subjects with TAA06-positive advanced solid tumor.",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT05190185"
+  },
+  {
+    "nct_id": "NCT07099898",
+    "title": "A Study of GSK5764227 in Participants With Relapsed Small Cell Lung Cancer (SCLC)",
+    "status": "RECRUITING",
+    "phases": [
+      "PHASE3"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 420,
+    "sponsor": "GlaxoSmithKline",
+    "interventions": [
+      "Ris-Rez",
+      "Topotecan"
+    ],
+    "intervention_types": [
+      "BIOLOGICAL",
+      "DRUG"
+    ],
+    "conditions": [
+      "Neoplasms, Lung"
+    ],
+    "has_results": false,
+    "start_date": "2025-08-11",
+    "completion_date": "2029-09-28",
+    "last_update": "2026-07-29",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "In this study researchers are testing Risvutatug rezetecan also known as (Ris-Rez) a new medicine that targets specific proteins (B7-H3) on cancer cells, thereby reducing the cancer's ability to grow and spread. This study specifically aims to evaluate how well Ris-Rez works in treating relapsed SCLC compared to standard treatment topotecan, by checking whether Ris-Rez makes cancers smaller or disappear completely and if it helps participants live longer. The study is also assessing whether Ris-Rez is safe and tolerated well by participants compared to topotecan and provide a better understanding of the main side effects of both drugs. Participants with relapsed SCLC will be randomly divided into two groups: one group receiving Ris-Rez and the other receiving topotecan.",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT07099898"
+  },
+  {
+    "nct_id": "NCT05280470",
+    "title": "Ifinatamab Deruxtecan (I-DXd) in Subjects With Pretreated Extensive-Stage Small Cell Lung Cancer (ES-SCLC)",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "phases": [
+      "PHASE2"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 187,
+    "sponsor": "Daiichi Sankyo",
+    "interventions": [
+      "Ifinatamab Deruxtecan (I-DXd)"
+    ],
+    "intervention_types": [
+      "DRUG"
+    ],
+    "conditions": [
+      "Extensive-stage Small-cell Lung Cancer"
+    ],
+    "has_results": false,
+    "start_date": "2022-03-09",
+    "completion_date": "2026-12-15",
+    "last_update": "2026-02-25",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "This 2-part study intends to define the recommended Phase 2 dose of ifinatamab deruxtecan (I-DXd) based on the efficacy, safety, and pharmacokinetics (PK) results observed in participants with Extensive-stage Small Cell Lung Cancer (ES-SCLC) who received at least 1 prior line of platinum-based chemotherapy and a maximum of 3 prior lines of therapy (Part 1) and a minimum of two previous lines of systemic therapy (Part 2). This study will also investigate I-DXd anti-tumor activity in this population.",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT05280470"
+  },
+  {
+    "nct_id": "NCT07189871",
+    "title": "177Lu-BetaBart in Patients With Relapsed/Refractory, Locally Advanced Inoperable, or Metastatic Solid Tumors",
+    "status": "RECRUITING",
+    "phases": [
+      "PHASE1",
+      "PHASE2"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 61,
+    "sponsor": "Radiopharm Theranostics, Ltd",
+    "interventions": [
+      "177Lu-BetaBart"
+    ],
+    "intervention_types": [
+      "DRUG"
+    ],
+    "conditions": [
+      "Castration-Resistant Prostate Cancer (CRPC)",
+      "Colorectal Cancer",
+      "NSCLC (Non-small Cell Lung Cancer)",
+      "Ovarian Cancer",
+      "Cervical Cancer",
+      "Endometrial Cancer",
+      "TNBC, Triple Negative Breast Cancer",
+      "Small Cell Lung Cancer (SCLC )",
+      "Head &Amp; Neck Squamous Cell Carcinoma (HNSCC)",
+      "Esophageal Squamous Cell Carcinoma (ESCC)"
+    ],
+    "has_results": false,
+    "start_date": "2026-02-23",
+    "completion_date": "2027-12",
+    "last_update": "2026-03-27",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "A Phase 1/2a Dose Escalation and Expansion Study of the Safety, Tolerability, and Preliminary Clinical Activity of 177LuBetaBart, a 177Lu-Labeled Anti-B7-H3 Monoclonal Antibody, in Patients with Relapsed/Refractory, Locally Advanced Inoperable, or Metastatic Solid Tumors",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT07189871"
+  },
+  {
+    "nct_id": "NCT07076095",
+    "title": "A Phase II/III Study of IBB0979 in Combination With Topotecan Versus Topotecan in Relapsed Small Cell Lung Cancer",
+    "status": "NOT_YET_RECRUITING",
+    "phases": [
+      "PHASE2"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 200,
+    "sponsor": "SUNHO（China）BioPharmaceutical CO., Ltd.",
+    "interventions": [
+      "IBB0979",
+      "topotecan hydrochloride for injection"
+    ],
+    "intervention_types": [
+      "DRUG"
+    ],
+    "conditions": [
+      "Small Cell Lung Cancer"
+    ],
+    "has_results": false,
+    "start_date": "2025-08-01",
+    "completion_date": "2031-08-01",
+    "last_update": "2025-07-21",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "This study was designed to compare the efficacy and safety of IBB0979 in combination with topotecan versus topotecan in subjects with relapsed small cell lung cancer (SCLC).",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT07076095"
+  },
+  {
+    "nct_id": "NCT04842812",
+    "title": "Engineered TILs/CAR-TILs to Treat Advanced Solid Tumors",
+    "status": "RECRUITING",
+    "phases": [
+      "PHASE1"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 40,
+    "sponsor": "Second Affiliated Hospital of Guangzhou Medical University",
+    "interventions": [
+      "TILs and CAR-TILs targeting HER2, Mesothelin, PSCA, MUC1, Lewis-Y, GPC3, AXL, EGFR, Claudin18.2/6, ROR1, GD1, or B7-H3"
+    ],
+    "intervention_types": [
+      "BIOLOGICAL"
+    ],
+    "conditions": [
+      "Liver Cancer",
+      "Lung Cancer",
+      "Breast Cancer",
+      "Colo-rectal Cancer",
+      "Brain Tumor",
+      "Solid Tumor, Adult",
+      "PD1",
+      "CTLA4"
+    ],
+    "has_results": false,
+    "start_date": "2021-01-01",
+    "completion_date": "2035-01-01",
+    "last_update": "2024-06-25",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "Tumor infiltration lymphocytes (TILs) have been harvested from advanced cancer patients and constructed to knockout PD1 gene and express scFvs against both PD1 and CTALA4 and CARs against various antigens, followed by transfusion into the patients. The safety, tolerance, and preliminary clinical efficacy of the TILs will be evaluated.",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT04842812"
+  },
+  {
+    "nct_id": "NCT06242470",
+    "title": "A Study of MGC026 in Participants With Advanced Solid Tumors",
+    "status": "RECRUITING",
+    "phases": [
+      "PHASE1"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 250,
+    "sponsor": "MacroGenics",
+    "interventions": [
+      "MGC026 Dose Escalation",
+      "MGC026 Dose for Expansion"
+    ],
+    "intervention_types": [
+      "BIOLOGICAL"
+    ],
+    "conditions": [
+      "Advanced Solid Tumor",
+      "Advanced Cancer",
+      "Metastatic Cancer",
+      "Squamous Cell Carcinoma of Head and Neck",
+      "Non Small Cell Lung Cancer",
+      "Small-cell Lung Cancer",
+      "Bladder Cancer",
+      "Sarcoma",
+      "Endometrial Cancer",
+      "Melanoma",
+      "Castration Resistant Prostatic Cancer",
+      "Cervical Cancer",
+      "Colorectal Cancer",
+      "Gastric Cancer",
+      "Gastro-esophageal Cancer",
+      "Pancreas Cancer",
+      "Clear Cell Renal Cell Carcinoma",
+      "Hepatocellular Carcinoma",
+      "Platinum-resistant Ovarian Cancer",
+      "Breast Cancer",
+      "Ovarian Cancer",
+      "Esophageal Squamous Cell Cancer (SCC)"
+    ],
+    "has_results": false,
+    "start_date": "2024-03-06",
+    "completion_date": "2028-10",
+    "last_update": "2026-08-11",
+    "target_role": "unconfirmed",
+    "matched_aliases": [],
+    "monotherapy_signal": false,
+    "summary": "The study is designed to understand the safety, tolerability, pharmacokinetics, immunogenicity, and preliminary antitumor activity of MGC026 in participants with relapsed or refractory, unresectable, locally advanced or metastatic solid tumors The study has a dose escalation portion and a cohort expansion portion of the study.\n\nParticipants will receive MGC026 by intravenous (IV) infusion. The dose of MGC026 will be assigned at the time of enrollment. Participants may receive up to 35 treatments if there are no severe side effects and as long as the cancer does not get worse. Participants will be monitored for side effects, and progression of cancer, have blood samples collected for routing laboratory work, and blood samples collected for research purposes.",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT06242470"
+  },
+  {
+    "nct_id": "NCT06362252",
+    "title": "A Study of I-DXd in Combination With Atezolizumab With or Without Carboplatin as First-Line Induction or Maintenance in Subjects With Extensive Stage-Small Cell Lung Cancer (IDeate-Lung03)",
+    "status": "RECRUITING",
+    "phases": [
+      "PHASE1",
+      "PHASE2"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 123,
+    "sponsor": "Daiichi Sankyo",
+    "interventions": [
+      "Ifinatamab deruxtecan",
+      "Atezolizumab",
+      "Carboplatin"
+    ],
+    "intervention_types": [
+      "DRUG"
+    ],
+    "conditions": [
+      "Extensive Stage-small Cell Lung Cancer"
+    ],
+    "has_results": false,
+    "start_date": "2024-07-22",
+    "completion_date": "2026-12-30",
+    "last_update": "2026-02-06",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "This study is designed to evaluate the safety and efficacy of ifinatamab deruxtecan (I-DXd) in combination with immune checkpoint inhibitor (ICI) atezolizumab with or without carboplatin in participants with extensive stage-small cell lung cancer (ES-SCLC) in the first-line (1L) setting.",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT06362252"
+  },
+  {
+    "nct_id": "NCT05914116",
+    "title": "A Phase 1/2a Study of DB-1311/BNT324 in Advanced/Metastatic Solid Tumors",
+    "status": "RECRUITING",
+    "phases": [
+      "PHASE1",
+      "PHASE2"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 862,
+    "sponsor": "DualityBio Inc.",
+    "interventions": [
+      "DB-1311",
+      "Lopinavir and Ritonavir Tablets",
+      "itraconazole",
+      "Enzalutamide",
+      "Abiraterone"
+    ],
+    "intervention_types": [
+      "DRUG"
+    ],
+    "conditions": [
+      "Advanced Solid Tumors"
+    ],
+    "has_results": false,
+    "start_date": "2023-08-17",
+    "completion_date": "2028-05",
+    "last_update": "2025-11-21",
+    "target_role": "unconfirmed",
+    "matched_aliases": [],
+    "monotherapy_signal": false,
+    "summary": "This is a dose-escalation and dose-expansion Phase 1/2a trial to evaluate the safety and tolerability of DB-1311/BNT324 in subjects with advanced solid tumors.",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT05914116"
+  },
+  {
+    "nct_id": "NCT05142189",
+    "title": "Clinical Trial Evaluating the Safety, Tolerability and Preliminary Efficacy of BNT116 Alone and in Combinations in Patients With Advanced Non-small Cell Lung Cancer",
+    "status": "RECRUITING",
+    "phases": [
+      "PHASE1"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 320,
+    "sponsor": "BioNTech SE",
+    "interventions": [
+      "BNT116",
+      "Cemiplimab",
+      "Docetaxel",
+      "Carboplatin",
+      "Paclitaxel",
+      "BNT316",
+      "anti-B7-H3 antibody conjugated to topoisomerase I inhibitor",
+      "anti-HER3 antibody conjugated to topoisomerase I inhibitor",
+      "Bispecific antibody for PD-L1 and VEGF-A",
+      "Osimertinib",
+      "ALK-inhibitor or RET-inhibitor"
+    ],
+    "intervention_types": [
+      "BIOLOGICAL",
+      "DRUG"
+    ],
+    "conditions": [
+      "Non-Small Cell Lung Cancer"
+    ],
+    "has_results": false,
+    "start_date": "2022-06-17",
+    "completion_date": "2031-11",
+    "last_update": "2026-07-22",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "This first-in-human (FIH) study for BNT116 aims to establish the safety profile and a safe dose for BNT116 monotherapy as well as for BNT116 in combination with approved medicinal products and/or in combination with investigational medicinal products (IMPs) including, but not limited to, cemiplimab, docetaxel, carboplatin, paclitaxel, osimertinib, anaplastic lymphoma kinase (ALK) tyrosine kinase inhibitors (TKIs), rearranged during transfection (RET) TKIs, BNT316 (an anti-cytotoxic T-lymphocyte-associated protein 4 \\[CTLA-4\\] antibody), an anti-B7-H3 antibody conjugated to a topoisomerase I inhibitor, an anti-human epidermal growth factor receptor 3 (HER3) antibody conjugated to a topoisomerase I inhibitor or a bispecific antibody for programmed death ligand 1 (PD-L1) and vascular endothelial growth factor A (VEGF-A) in participants with non-small cell lung cancer (NSCLC).\n\nThe study will comprise several cohorts for dose confirmation in monotherapy as well as in combinations of BNT116 as mentioned above.\n\nThe study will enroll participants with NSCLC in advanced or metastatic stage in Cohorts 1 to 4 and Cohorts 7 to 10, unresectable NSCLC Stage III in Cohorts 5 and 11, resectable NSCLC of Stage II and III in Cohort 6, advanced/metastatic epidermal growth factor receptor (EGFR)-mutant NSCLC in Cohort EGFR, and advanced/metastatic ALK rearranged or RET rearranged NSCLC in Cohort ALK/RET.\n\nCohort EGFR and Cohort ALK/RET will enroll only at selected sites in the US.",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT05142189"
+  },
+  {
+    "nct_id": "NCT07509034",
+    "title": "Autologous B7-H3 Chimeric Antigen Receptor T Cells in Previously Treated Extensive-Stage Small Cell Lung Cancer With Recurrent or Refractory Disease",
+    "status": "NOT_YET_RECRUITING",
+    "phases": [
+      "PHASE1"
+    ],
+    "study_type": "INTERVENTIONAL",
+    "enrollment": 40,
+    "sponsor": "National Cancer Institute (NCI)",
+    "interventions": [
+      "Autologous B7-H3 CAR T",
+      "Cyclophosphamide",
+      "Fludarabine"
+    ],
+    "intervention_types": [
+      "DRUG"
+    ],
+    "conditions": [
+      "Extensive-Stage Small Cell Lung Cancer",
+      "Extrapulmonary Neuroendocrine Carcinoma",
+      "Recurrent or Refractory",
+      "Solid Tumors"
+    ],
+    "has_results": false,
+    "start_date": "2026-08-24",
+    "completion_date": "2031-01-30",
+    "last_update": "2026-08-19",
+    "target_role": "direct_intervention",
+    "matched_aliases": [
+      "B7-H3"
+    ],
+    "monotherapy_signal": false,
+    "summary": "Background:\n\nSmall cell lung cancer (SCLC) is the deadliest form of lung cancer. Extrapulmonary neuroendocrine cancer (EPNEC) is a similar type of cancer that develops anywhere other than the lungs. EPNEC is also deadly. B7-H3 is a protein often found in SCLC and EPNEC tumor cells. Researchers can modify a person s own T cells, or immune cells, to target B7-H3. When these modified T cells are returned to the body-a treatment called B7-H3 chimeric antigen receptor (CAR) T cell therapy-they may help kill cancer cells.\n\nObjective:\n\nTo test B7-H3 CAR T cell therapy in people with SCLC or EPNEC.\n\nEligibility:\n\nPeople aged 18 years and older with SCLC or EPNEC that either did not respond or returned after treatment.\n\nDesign:\n\nParticipants will be screened. They will have blood tests and tests of their heart function. They will have imaging scans.\n\nParticipants will undergo apheresis: Blood will be taken from the body through a needle. The blood will pass through a machine that separates out the T cells. The remaining blood will be returned to the body through a different needle. The collected T cells will be altered to make them attack cells with B7-H3.\n\nParticipants will be in the hospital for at least 15 days. They will receive chemotherapy drugs to prepare their body for the treatment. These drugs will be given through a tube attached to a needle inserted into a vein.\n\nThe modified T cells will be infused through a vein. Participants will remain in the hospital until they are well enough to go home.\n\nFollow-up visits will continue for 15 years....",
+    "why_stopped": null,
+    "url": "https://clinicaltrials.gov/study/NCT07509034"
+  }
+]
