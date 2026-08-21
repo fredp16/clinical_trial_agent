@@ -52,11 +52,12 @@ def fetch_studies(condition: str, aliases: Iterable[str], max_studies: int = 250
     seen: dict[str, dict[str, Any]] = {}
     for alias in aliases:
         page_token: str | None = None
-        while len(seen) < max_studies:
+        alias_count = 0
+        while True:
             params = {
                 "query.cond": condition,
                 "query.intr": alias,
-                "pageSize": str(min(100, max_studies - len(seen))),
+                "pageSize": "100",
                 "format": "json",
                 "countTotal": "true",
             }
@@ -68,12 +69,11 @@ def fetch_studies(condition: str, aliases: Iterable[str], max_studies: int = 250
                 nct = _get(study, "protocolSection.identificationModule.nctId")
                 if nct:
                     seen[nct] = study
+            alias_count += len(payload.get("studies", []))
             page_token = payload.get("nextPageToken")
-            if not page_token:
+            if not page_token or alias_count >= max_studies:
                 break
-        if len(seen) >= max_studies:
-            break
-    return list(seen.values())
+    return list(seen.values())[:max_studies]
 
 
 def _request_json(url: str, retries: int = 3) -> dict[str, Any]:

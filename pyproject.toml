@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ct-target-agent"
-version = "0.2.0"
+version = "0.2.1"
 description = "Auditable ClinicalTrials.gov target-assessment agent"
 requires-python = ">=3.11"
 dependencies = ["openai>=1.0"]

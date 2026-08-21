@@ -35,21 +35,19 @@ def aliases_for(target: str) -> list[str]:
 def deepseek_plan(question: str, target: str, condition: str, model: str) -> tuple[list[str], str]:
     """Use DeepSeek V4 only to expand query vocabulary, never to invent trials."""
     client = _deepseek_client()
-    response = client.responses.create(
-        model=model,
-        instructions=(
-            "Return JSON only. You plan a ClinicalTrials.gov search. Provide canonical human gene/target aliases "
-            "and one registry-friendly disease term. Do not provide drug names, trial IDs, or commentary."
-        ),
-        input=(
+    instructions = (
+        "Return JSON only. You plan a ClinicalTrials.gov search. Provide canonical human gene/target aliases "
+        "and one registry-friendly disease term. Do not provide drug names, trial IDs, or commentary."
+    )
+    prompt = (
             f'Question: {question}\nTarget: {target}\nDisease: {condition}\n'
             'JSON schema: {"target_aliases":["string"],"condition_query":"string"}. '
             "Include the user's target verbatim; at most 6 aliases."
-        ),
-        max_output_tokens=400,
-        reasoning={"effort": "low"},
     )
-    text = response.output_text.strip()
+    try:
+        text = _deepseek_text(client, model, instructions, prompt, max_output_tokens=400, reasoning_effort="low")
+    except Exception:
+        return aliases_for(target), condition
     if text.startswith("```"):
         text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.I)
     try:
@@ -153,6 +151,58 @@ def _deepseek_client():
     return OpenAI(api_key=api_key, base_url=os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com"))
 
 
+def _extract_response_text(response: Any) -> str:
+    """Extract final text across OpenAI-SDK and DeepSeek Responses variants."""
+    direct = getattr(response, "output_text", None)
+    if isinstance(direct, str) and direct.strip():
+        return direct.strip()
+
+    output = getattr(response, "output", None)
+    if output is None and hasattr(response, "model_dump"):
+        output = response.model_dump().get("output", [])
+    chunks: list[str] = []
+    for item in output or []:
+        item_type = item.get("type") if isinstance(item, dict) else getattr(item, "type", None)
+        if item_type != "message":
+            continue
+        content = item.get("content", []) if isinstance(item, dict) else getattr(item, "content", [])
+        for part in content or []:
+            part_type = part.get("type") if isinstance(part, dict) else getattr(part, "type", None)
+            if part_type not in {"output_text", "text"}:
+                continue
+            value = part.get("text", "") if isinstance(part, dict) else getattr(part, "text", "")
+            if isinstance(value, str) and value.strip():
+                chunks.append(value.strip())
+    return "\n".join(chunks).strip()
+
+
+def _deepseek_text(client: Any, model: str, instructions: str, prompt: str, max_output_tokens: int, reasoning_effort: str) -> str:
+    """Call Responses first; retry without thinking through Chat Completions if final text is empty."""
+    response = client.responses.create(
+        model=model,
+        instructions=instructions,
+        input=prompt,
+        max_output_tokens=max_output_tokens,
+        reasoning={"effort": reasoning_effort},
+    )
+    text = _extract_response_text(response)
+    if text:
+        return text
+
+    completion = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": instructions},
+            {"role": "user", "content": prompt},
+        ],
+        max_tokens=max_output_tokens,
+        stream=False,
+        extra_body={"thinking": {"type": "disabled"}},
+    )
+    content = completion.choices[0].message.content
+    return content.strip() if isinstance(content, str) else ""
+
+
 def llm_refine(report: str, trials: list[Trial], model: str) -> str:
     client = _deepseek_client()
     evidence = json.dumps([t.to_dict() for t in trials if t.target_role == "direct_intervention"], ensure_ascii=False)
@@ -161,17 +211,20 @@ Never infer efficacy from trial existence, phase, enrollment, planned endpoints,
 Preserve every NCT citation and explicitly separate facts, inferences, and unknowns.
 
 DRAFT:\n{report}\n\nTRIAL EVIDENCE:\n{evidence}"""
-    response = client.responses.create(
-        model=model,
-        instructions=(
+    text = _deepseek_text(
+        client,
+        model,
+        (
             "You are a skeptical clinical-development analyst. Do not add facts not present in the evidence. "
             "Answer in the language used by the user's question."
         ),
-        input=prompt,
+        prompt,
         max_output_tokens=5000,
-        reasoning={"effort": "high"},
+        reasoning_effort="high",
     )
-    return response.output_text
+    if not text:
+        raise RuntimeError("DeepSeek returned no final answer text")
+    return text
 
 
 def assess(question: str, out_dir: str | Path, max_studies: int = 250, use_llm: bool = True, model: str | None = None, raw_studies: list[dict[str, Any]] | None = None) -> Path:
@@ -183,8 +236,24 @@ def assess(question: str, out_dir: str | Path, max_studies: int = 250, use_llm: 
     trials = [normalize(x, aliases) for x in raw]
     stats = summarize(trials)
     report = render_report(question, target, condition, aliases, trials, stats)
+    llm_status = "not_requested"
+    llm_warning = None
     if use_llm:
-        report = llm_refine(report, trials, selected_model)
+        deterministic_report = report
+        try:
+            refined = llm_refine(deterministic_report, trials, selected_model).strip()
+            if not refined:
+                raise RuntimeError("DeepSeek returned an empty report")
+            report = refined
+            llm_status = "succeeded"
+        except Exception as exc:
+            llm_status = "fallback_to_deterministic"
+            llm_warning = f"{type(exc).__name__}: {exc}"
+            report = (
+                "> **Generation note:** DeepSeek refinement did not return usable final text; "
+                "the deterministic evidence report is retained. See `retrieval.json` for diagnostics.\n\n"
+                + deterministic_report
+            )
 
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
@@ -199,6 +268,8 @@ def assess(question: str, out_dir: str | Path, max_studies: int = 250, use_llm: 
         "source": "ClinicalTrials.gov API v2",
         "llm_provider": "DeepSeek" if use_llm else None,
         "llm_model": selected_model if use_llm else None,
+        "llm_refinement_status": llm_status,
+        "llm_warning": llm_warning,
         "max_studies": max_studies,
         "summary": stats,
     }

@@ -75,3 +75,17 @@ python -m unittest discover -s tests -v
 ```
 
 The tests use a local fixture and never call external services.
+
+## Colab troubleshooting
+
+Always install or upgrade the SDK before importing the package:
+
+```python
+!pip install -U "openai>=1.0"
+```
+
+If DeepSeek's Responses endpoint returns reasoning tokens but no final text, the
+agent automatically retries through Chat Completions with thinking disabled.
+If both calls fail or remain empty, it keeps the deterministic report instead
+of overwriting `report.md`. Inspect `llm_refinement_status` and `llm_warning` in
+`retrieval.json` for the exact fallback status.

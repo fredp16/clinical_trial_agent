@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from ct_target_agent.agent import assess, parse_question, summarize
+from ct_target_agent.agent import _extract_response_text, assess, parse_question, summarize
 from ct_target_agent.clinicaltrials import normalize
 
 
@@ -25,6 +25,20 @@ def fixture(target_in_intervention=True, has_results=False, status="RECRUITING")
 
 
 class AgentTests(unittest.TestCase):
+    def test_extract_response_text_from_nested_message(self):
+        class FakeResponse:
+            output_text = ""
+            output = [{"type": "reasoning", "content": "hidden"}, {"type": "message", "content": [{"type": "output_text", "text": "Final report"}]}]
+
+        self.assertEqual(_extract_response_text(FakeResponse()), "Final report")
+
+    def test_extract_response_text_ignores_reasoning_only(self):
+        class FakeResponse:
+            output_text = ""
+            output = [{"type": "reasoning", "content": "not the final answer"}]
+
+        self.assertEqual(_extract_response_text(FakeResponse()), "")
+
     def test_parse(self):
         self.assertEqual(parse_question("Assess B7-H3 potential as a therapeutic target in lung cancer"), ("B7-H3", "lung cancer"))
 
@@ -53,6 +67,17 @@ class AgentTests(unittest.TestCase):
             self.assertTrue(report.exists())
             self.assertIn("Clinical hypothesis under active test", report.read_text())
             self.assertEqual(len(json.loads((Path(tmp) / "trials.json").read_text())), 1)
+
+    def test_empty_llm_never_overwrites_report(self):
+        from unittest.mock import patch
+
+        with tempfile.TemporaryDirectory() as tmp, patch("ct_target_agent.agent.deepseek_plan", return_value=(["B7-H3", "CD276"], "lung cancer")), patch("ct_target_agent.agent.llm_refine", return_value=""):
+            report_path = assess("Assess B7-H3 potential as a therapeutic target in lung cancer", tmp, use_llm=True, raw_studies=[fixture()])
+            report = report_path.read_text()
+            metadata = json.loads((Path(tmp) / "retrieval.json").read_text())
+            self.assertIn("Clinical hypothesis under active test", report)
+            self.assertGreater(len(report), 100)
+            self.assertEqual(metadata["llm_refinement_status"], "fallback_to_deterministic")
 
 
 if __name__ == "__main__":

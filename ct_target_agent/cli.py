@@ -3,10 +3,13 @@ from __future__ import annotations
 import argparse
 import sys
 
+from dotenv import load_dotenv
+
 from .agent import assess
 
 
 def main() -> None:
+    load_dotenv()
     parser = argparse.ArgumentParser(description="Assess a therapeutic target from ClinicalTrials.gov records.")
     parser.add_argument("question", help='e.g. "Assess B7-H3 potential as a therapeutic target in lung cancer"')
     parser.add_argument("--out", default="output/assessment", help="output directory")
